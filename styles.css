@@ -90,6 +90,29 @@ main {
 
 #announcements {
     background-color: pink;
+    
+}
+
+#announcements .grid-container {
+    border: solid 2px black;
+    border-radius: 10px;
+    grid-auto-rows: auto;
+    padding: 15px 20px;
+}
+
+.announcement {
+    padding: 15px 5px;
+    border-bottom: 1px gray solid;
+    font-size: 0.9rem;
+}
+
+.announcement:last-child {
+    border-bottom: none;
+}
+
+.announcement h4,
+.announcement p {
+    margin: 0;
 }
 
 #trending {
