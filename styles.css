@@ -142,4 +142,5 @@ main h2 {
 #announcements .grid-container,
 #trending .grid-container {
     background-color: white;
+    box-shadow: darkslategray 5px 9px 10px;
 }
