@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template: 225px 1fr / minmax(250px, 1fr) 4.5fr;
+    grid-template: 200px 1fr / minmax(250px, 1fr) 4.5fr;
     min-height: 100vh;
 }
 
@@ -54,9 +54,14 @@ ul {
 
 main {
     display: grid;
-    grid-template: 1fr / 1fr;
+    grid-template: 450px 450px 1fr / 1fr 350px;
+    gap: 20px;
     background-color: aliceblue;
-    padding-left: 20px;
+    padding: 20px;
+}
+
+#projects {
+    grid-area: 1 / 1 / 4 / 2;
 }
 
 
@@ -81,5 +86,13 @@ main {
 
 #projects article p {
     margin: 5px 0;
+}
+
+#announcements {
+    background-color: pink;
+}
+
+#trending {
+    background-color: greenyellow;
 }
 
