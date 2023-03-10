@@ -93,7 +93,8 @@ main {
     
 }
 
-#announcements .grid-container {
+#announcements .grid-container,
+#trending .grid-container {
     border: solid 2px black;
     border-radius: 10px;
     grid-auto-rows: auto;
@@ -111,7 +112,8 @@ main {
 }
 
 .announcement h4,
-.announcement p {
+.announcement p,
+.trend p {
     margin: 0;
 }
 
@@ -119,3 +121,26 @@ main {
     background-color: greenyellow;
 }
 
+#trending a {
+    text-decoration: none;
+    color: gray;
+}
+
+.trend {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 18px;
+    align-items: center;
+    padding: 12px 8px;
+}
+
+.av-small {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.trend .username {
+    color: black;
+}
