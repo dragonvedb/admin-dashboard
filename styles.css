@@ -2,6 +2,8 @@ body {
     display: grid;
     grid-template: 210px 1fr / minmax(250px, 1fr) 4.5fr;
     min-height: 100vh;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 p {
@@ -138,9 +140,14 @@ button.profile-btn {
 #content-buttons button {
     appearance: none;
     height: 50px;
-    width: 125px;
+    width: 135px;
     border: none;
     border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    font-weight: bold;
     color: aliceblue;
     background-color: cadetblue;
 }
@@ -148,8 +155,6 @@ button.profile-btn {
 #content-buttons button:hover {
     background-color: darkcyan;
 }
-
-
 
 
 main {
