@@ -22,6 +22,9 @@ header {
     gap: 45px;
 }
 
+#sidebar img {
+}
+
 #sidebar > ul {
     display: grid;
     grid-auto-rows: 1fr;
