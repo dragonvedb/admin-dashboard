@@ -60,13 +60,24 @@ header {
     padding: 0 60px 0 40px;
 }
 
-header input[type="search"] {
+header button,
+header input {
     appearance: none;
+    border: none;
+}
+
+header input[type="search"] {
     height: 40px;
     border-radius: 50px;
-    border: none;
     padding-left: 1em;
     padding-right: 0.5em;
+}
+
+button.notifs {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    justify-self: end;
 }
 
 #user-greeting {
