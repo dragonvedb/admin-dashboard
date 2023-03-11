@@ -239,6 +239,7 @@ main h2 {
     grid-template-columns: 60px 1fr;
     gap: 18px;
     align-items: center;
+    border-radius: 10px;
     padding: 12px 8px;
 }
 
@@ -265,4 +266,9 @@ main h2 {
 #trending .grid-container {
     background-color: white;
     box-shadow: darkslategray 5px 9px 10px;
+}
+
+.announcement:hover,
+.trend:hover {
+    background-color: aliceblue;
 }
