@@ -51,6 +51,21 @@ ul {
     list-style: none;
 }
 
+header {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 150px 350px;
+    gap: 20px;
+    align-items: center;
+}
+
+#project-buttons {
+    grid-column: 2 / 4;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
 
 main {
     display: grid;
