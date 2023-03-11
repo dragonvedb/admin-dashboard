@@ -70,11 +70,24 @@ header input {
     border: none;
 }
 
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 header input[type="search"] {
     height: 40px;
+    flex: 1;
     border-radius: 50px;
     padding-left: 1em;
     padding-right: 0.5em;
+}
+
+button.search-btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
 }
 
 button.notifs-btn {
