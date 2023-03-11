@@ -4,6 +4,10 @@ body {
     min-height: 100vh;
 }
 
+p {
+    margin: 0;
+}
+
 header {
     background-color: blueviolet;
     grid-column: 2 / 3;
@@ -73,11 +77,21 @@ header input[type="search"] {
     padding-right: 0.5em;
 }
 
-button.notifs {
+button.notifs-btn {
     height: 40px;
     width: 40px;
     border-radius: 50%;
     justify-self: end;
+}
+
+button.profile-btn {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 35px;
+    padding: 6px;
 }
 
 #user-greeting {
@@ -93,7 +107,7 @@ button.notifs {
 }
 
 .greeting p:last-child {
-    font-size: 1.6em;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
