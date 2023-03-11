@@ -60,6 +60,15 @@ header {
     padding: 0 60px 0 40px;
 }
 
+header input[type="search"] {
+    appearance: none;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    padding-left: 1em;
+    padding-right: 0.5em;
+}
+
 #user-greeting {
     display: grid;
     grid-template-columns: 80px 1fr;
@@ -85,7 +94,7 @@ header {
 
 #content-buttons button {
     appearance: none;
-    height: 45px;
+    height: 50px;
     width: 125px;
     border: none;
     border-radius: 50px;
