@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template: 200px 1fr / minmax(250px, 1fr) 4.5fr;
+    grid-template: 210px 1fr / minmax(250px, 1fr) 4.5fr;
     min-height: 100vh;
 }
 
@@ -53,15 +53,31 @@ ul {
 
 header {
     display: grid;
-    grid-template: 1fr 1fr / 1fr 150px 350px;
-    gap: 20px;
+    grid-template: 100px 1fr / 1fr 125px 325px;
+    gap: 10px 25px;
     align-items: center;
+
+    padding: 0 60px 0 40px;
 }
 
-#project-buttons {
+#content-buttons {
     grid-column: 2 / 4;
     display: flex;
     justify-content: space-between;
+}
+
+#content-buttons button {
+    appearance: none;
+    height: 45px;
+    width: 125px;
+    border: none;
+    border-radius: 50px;
+    color: aliceblue;
+    background-color: cadetblue;
+}
+
+#content-buttons button:hover {
+    background-color: darkcyan;
 }
 
 
