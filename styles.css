@@ -22,9 +22,6 @@ header {
     gap: 45px;
 }
 
-#sidebar img {
-}
-
 #sidebar > ul {
     display: grid;
     grid-auto-rows: 1fr;
@@ -32,19 +29,24 @@ header {
 
 #logo a,
 #sidebar a {
-    display: flex;
+    display: grid;
+    grid-template-columns: 60px 1fr;
     align-items: center;
     text-decoration: none;
     color: aliceblue;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.3rem;
     font-weight: bold;
-    padding-left: 1.8rem;
+    padding-left: 0.6rem;
     height: 100%;
 }
 
+#sidebar img {
+    justify-self: center;
+}
+
 #logo a {
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 #logo a:hover,
