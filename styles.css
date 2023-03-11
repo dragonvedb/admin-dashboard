@@ -80,36 +80,46 @@ header input {
 .search-bar {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 header input[type="search"] {
-    height: 40px;
+    height: 45px;
     flex: 1;
     border-radius: 50px;
     padding-left: 1em;
     padding-right: 0.5em;
 }
 
-button.search-btn {
-    height: 40px;
-    width: 40px;
+button.search-btn,
+button.notifs-btn {
+    height: 45px;
+    width: 45px;
     border-radius: 50%;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button.search-btn:hover,
+button.notifs-btn:hover,
+button.profile-btn:hover {
+    background-color: hsl(271, 76%, 65%);
 }
 
 button.notifs-btn {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
     justify-self: end;
 }
 
 button.profile-btn {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 15px;
     font-size: 1.2rem;
     font-weight: bold;
+    color: aliceblue;
+    background-color: blueviolet;
     border-radius: 35px;
     padding: 6px;
 }
@@ -236,14 +246,14 @@ main h2 {
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    background-color: gray;
+    background-color: aliceblue;
 }
 
 .av-large {
     height: 80px;
     width: 80px;
     border-radius: 50%;
-    background-color: gray;
+    background-color: aliceblue;
 }
 
 .trend .username {
