@@ -1,7 +1,10 @@
 html {
-    --sidebar-color: #1e293b;
-    --header-color: #1e3a8a;
-    --accent-color: #7c3aed;
+    --sidebar-color: hsl(217, 33%, 17%);
+    --sidebar-focus: hsl(243, 75%, 59%);
+    --header-color: hsl(226, 40%, 30%);
+    --header-focus: hsl(226, 40%, 50%);
+    --accent-color: hsl(266, 90%, 60%);
+    --accent-glow: #421e6b;
 }
 
 body {
@@ -54,13 +57,14 @@ header {
 }
 
 #logo a {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: initial;
+    font-family: 'Tilt Neon', cursive;
 }
 
-#logo a:hover,
 #sidebar li:hover,
 #content-buttons button:hover {
-    background-color: #4f46e5;
+    background-color: var(--sidebar-focus);
 }
 
 ul {
@@ -113,7 +117,7 @@ button.notifs-btn {
 button.search-btn:hover,
 button.notifs-btn:hover,
 button.profile-btn:hover {
-    background-color: hsl(271, 76%, 65%);
+    background-color: var(--header-focus);
 }
 
 button.notifs-btn {
@@ -199,9 +203,9 @@ main h2 {
 #projects article {
     color: black;
     background-color: white;
-    border-left: 10px var(--accent-color) solid;
+    border-left: 12px var(--accent-color) solid;
     border-radius: 10px;
-    box-shadow: #64748b 4px 5px 10px;
+    box-shadow: var(--accent-glow) -10px 0px 15px -2px, #a5b4fc 0px 0px 8px;
     padding: 20px 15px 0 15px;
 }
 
@@ -274,7 +278,7 @@ main h2 {
 #announcements .grid-container,
 #trending .grid-container {
     background-color: white;
-    /*box-shadow: darkslategray 5px 9px 10px;*/
+    box-shadow: #a5b4fc 0px 0px 8px;
 }
 
 .announcement:hover,
