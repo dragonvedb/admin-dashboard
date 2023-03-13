@@ -1,5 +1,7 @@
 html {
-    --sidebar-color: #312e81;
+    --sidebar-color: #1e293b;
+    --header-color: #1e3a8a;
+    --accent-color: #7c3aed;
 }
 
 body {
@@ -15,7 +17,8 @@ p {
 }
 
 header {
-    background-color: #9333ea;
+    color: black !important;
+    background-color: var(--header-color);
     grid-column: 2 / 3;
 }
 
@@ -93,6 +96,7 @@ header input[type="search"] {
     border-radius: 50px;
     padding-left: 1em;
     padding-right: 0.5em;
+    background-color: aliceblue;
 }
 
 button.search-btn,
@@ -100,7 +104,7 @@ button.notifs-btn {
     height: 45px;
     width: 45px;
     border-radius: 50%;
-    background-color: blueviolet;
+    background-color: var(--header-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,7 +127,7 @@ button.profile-btn {
     font-size: 1.2rem;
     font-weight: bold;
     color: aliceblue;
-    background-color: blueviolet;
+    background-color: var(--header-color);
     border-radius: 35px;
     padding: 6px;
 }
@@ -163,7 +167,7 @@ button.profile-btn {
     gap: 3px;
     font-weight: bold;
     color: aliceblue;
-    background-color: var(--sidebar-color);
+    background-color: var(--accent-color);
 }
 
 
@@ -171,13 +175,13 @@ main {
     display: grid;
     grid-template: auto auto 1fr / 1fr 350px;
     gap: 30px;
-    color: aliceblue;
-    background-color: #94a3b8;
+    background-color: hsl(180, 5%, 10%);
     padding: 20px;
 }
 
 main h2 {
     margin-bottom: 12px;
+    color: aliceblue;
 }
 
 #projects {
@@ -195,14 +199,16 @@ main h2 {
 #projects article {
     color: black;
     background-color: white;
-    border-left: 10px #9333ea solid;
+    border-left: 10px var(--accent-color) solid;
     border-radius: 10px;
+    box-shadow: #64748b 4px 5px 10px;
     padding: 20px 15px 0 15px;
 }
 
 #projects article h2 {
     font-size: 1.2rem;
     margin: 0;
+    color: black;
 }
 
 #projects article p {
