@@ -9,7 +9,7 @@ html {
 
 body {
     display: grid;
-    grid-template: 210px 1fr / minmax(250px, 1fr) 4.5fr;
+    grid-template: 210px 1fr / minmax(250px, 1fr) 5fr;
     min-height: 100vh;
     font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -52,7 +52,8 @@ header {
 }
 
 #sidebar #secondary a {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+    font-weight: normal;
 }
 
 #sidebar img {
