@@ -51,6 +51,10 @@ header {
     height: 100%;
 }
 
+#sidebar #secondary a {
+    font-size: 1.1rem;
+}
+
 #sidebar img {
     justify-self: center;
 }
