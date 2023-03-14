@@ -189,7 +189,7 @@ main {
     padding: 20px;
 }
 
-main h2 {
+#projects > h2 {
     margin-bottom: 12px;
     color: aliceblue;
     font-family: 'Maven Pro', sans-serif;
